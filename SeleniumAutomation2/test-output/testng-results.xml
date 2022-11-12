@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="10" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-09T09:25:38 IST" name="Suite" finished-at="2022-11-09T09:27:03 IST" duration-ms="84304">
+    <groups>
+      <group name="SanityTest">
+        <method signature="TestNGProgram.FramesEx()[pri:2, instance:com.testng.practice.TestNGProgram@6f15d60e]" name="FramesEx" class="com.testng.practice.TestNGProgram"/>
+      </group> <!-- SanityTest -->
+      <group name="RegressionTest">
+        <method signature="ActionsEx2.actionEx1()[pri:0, instance:com.testng.practice.ActionsEx2@1be2019a]" name="actionEx1" class="com.testng.practice.ActionsEx2"/>
+        <method signature="ActionsEx4.actionEx4()[pri:0, instance:com.testng.practice.ActionsEx4@446a1e84]" name="actionEx4" class="com.testng.practice.ActionsEx4"/>
+        <method signature="TestNGProgram.PositionEx()[pri:4, instance:com.testng.practice.TestNGProgram@6f15d60e]" name="PositionEx" class="com.testng.practice.TestNGProgram"/>
+        <method signature="MultipleTests.aThird()[pri:1, instance:com.testng.practice.MultipleTests@3932c79a]" name="aThird" class="com.testng.practice.MultipleTests"/>
+        <method signature="MultipleTests.dFour()[pri:3, instance:com.testng.practice.MultipleTests@3932c79a]" name="dFour" class="com.testng.practice.MultipleTests"/>
+      </group> <!-- RegressionTest -->
+      <group name="Smoke">
+        <method signature="ActionsEx3.actionEx3()[pri:0, instance:com.testng.practice.ActionsEx3@29d80d2b]" name="actionEx3" class="com.testng.practice.ActionsEx3"/>
+        <method signature="MultipleTests.cFirst()[pri:2, instance:com.testng.practice.MultipleTests@3932c79a]" name="cFirst" class="com.testng.practice.MultipleTests"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-11-09T09:25:38 IST" name="Test" finished-at="2022-11-09T09:27:03 IST" duration-ms="84304">
+      <class name="com.testng.practice.ActionsEx2">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.testng.practice.ActionsEx2@1be2019a]" started-at="2022-11-09T09:25:38 IST" name="launchBrowser" finished-at="2022-11-09T09:25:48 IST" duration-ms="10017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="actionEx1()[pri:0, instance:com.testng.practice.ActionsEx2@1be2019a]" started-at="2022-11-09T09:25:48 IST" name="actionEx1" finished-at="2022-11-09T09:25:56 IST" duration-ms="7888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionEx1 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testng.practice.ActionsEx2@1be2019a]" started-at="2022-11-09T09:25:56 IST" name="closeBrowser" finished-at="2022-11-09T09:25:57 IST" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testng.practice.ActionsEx2 -->
+      <class name="com.testng.practice.WebTableEx">
+        <test-method signature="webTableEx()[pri:0, instance:com.testng.practice.WebTableEx@4f0f2942]" started-at="2022-11-09T09:26:16 IST" name="webTableEx" finished-at="2022-11-09T09:26:24 IST" duration-ms="7946" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at com.testng.practice.WebTableEx.webTableEx(WebTableEx.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webTableEx -->
+      </class> <!-- com.testng.practice.WebTableEx -->
+      <class name="com.testng.practice.MultipleTests">
+        <test-method is-config="true" signature="bsuite()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:25:38 IST" name="bsuite" finished-at="2022-11-09T09:25:38 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:25:38 IST" name="beforeTest" finished-at="2022-11-09T09:25:38 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="preConditions" finished-at="2022-11-09T09:26:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="beforeMethod" finished-at="2022-11-09T09:26:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="aThird()[pri:1, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="aThird" finished-at="2022-11-09T09:26:24 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aThird -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="afterMethod" finished-at="2022-11-09T09:26:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="beforeMethod" finished-at="2022-11-09T09:26:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="cFirst()[pri:2, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="cFirst" description="This is first testNG" finished-at="2022-11-09T09:26:24 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cFirst -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="afterMethod" finished-at="2022-11-09T09:26:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="beforeMethod" finished-at="2022-11-09T09:26:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="dFour()[pri:3, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="dFour" finished-at="2022-11-09T09:26:24 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dFour -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="afterMethod" finished-at="2022-11-09T09:26:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:26:24 IST" name="tearDown" finished-at="2022-11-09T09:26:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:27:03 IST" name="afterTest" finished-at="2022-11-09T09:27:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="aSuite()[pri:0, instance:com.testng.practice.MultipleTests@3932c79a]" started-at="2022-11-09T09:27:03 IST" name="aSuite" finished-at="2022-11-09T09:27:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aSuite -->
+      </class> <!-- com.testng.practice.MultipleTests -->
+      <class name="com.testng.practice.TestNGProgram">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.testng.practice.TestNGProgram@6f15d60e]" started-at="2022-11-09T09:26:24 IST" name="launchBrowser" finished-at="2022-11-09T09:26:27 IST" duration-ms="2272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="FramesEx()[pri:2, instance:com.testng.practice.TestNGProgram@6f15d60e]" started-at="2022-11-09T09:26:27 IST" name="FramesEx" finished-at="2022-11-09T09:26:46 IST" duration-ms="19183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FramesEx -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testng.practice.TestNGProgram@6f15d60e]" started-at="2022-11-09T09:26:46 IST" name="closeBrowser" finished-at="2022-11-09T09:26:48 IST" duration-ms="1713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.testng.practice.TestNGProgram@6f15d60e]" started-at="2022-11-09T09:26:48 IST" name="launchBrowser" finished-at="2022-11-09T09:26:50 IST" duration-ms="2060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="PositionEx()[pri:4, instance:com.testng.practice.TestNGProgram@6f15d60e]" started-at="2022-11-09T09:26:50 IST" name="PositionEx" finished-at="2022-11-09T09:27:02 IST" depends-on-methods="com.testng.practice.TestNGProgram.FramesEx" duration-ms="12025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PositionEx -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testng.practice.TestNGProgram@6f15d60e]" started-at="2022-11-09T09:27:02 IST" name="closeBrowser" finished-at="2022-11-09T09:27:03 IST" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testng.practice.TestNGProgram -->
+      <class name="com.testng.practice.ActionsEx4">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.testng.practice.ActionsEx4@446a1e84]" started-at="2022-11-09T09:26:05 IST" name="launchBrowser" finished-at="2022-11-09T09:26:07 IST" duration-ms="1459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="actionEx4()[pri:0, instance:com.testng.practice.ActionsEx4@446a1e84]" started-at="2022-11-09T09:26:07 IST" name="actionEx4" finished-at="2022-11-09T09:26:16 IST" duration-ms="9349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionEx4 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testng.practice.ActionsEx4@446a1e84]" started-at="2022-11-09T09:26:16 IST" name="closeBrowser" finished-at="2022-11-09T09:26:16 IST" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testng.practice.ActionsEx4 -->
+      <class name="com.testng.practice.ActionsEx3">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.testng.practice.ActionsEx3@29d80d2b]" started-at="2022-11-09T09:25:57 IST" name="launchBrowser" finished-at="2022-11-09T09:25:58 IST" duration-ms="1402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="actionEx3()[pri:0, instance:com.testng.practice.ActionsEx3@29d80d2b]" started-at="2022-11-09T09:25:58 IST" name="actionEx3" finished-at="2022-11-09T09:26:05 IST" duration-ms="6470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actionEx3 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testng.practice.ActionsEx3@29d80d2b]" started-at="2022-11-09T09:26:05 IST" name="closeBrowser" finished-at="2022-11-09T09:26:05 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testng.practice.ActionsEx3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
