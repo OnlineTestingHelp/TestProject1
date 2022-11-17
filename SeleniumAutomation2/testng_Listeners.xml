@@ -14,8 +14,9 @@
       <class name="com.testng.practice.TestNGProgram"></class> 
             <class name="com.testng.practice.ActionsEx3"></class>
       <class name="com.testng.practice.ActionsEx4"></class>
-      <class name="com.testng.practice.WebTableEx"></class> -->
-      <class name="com.testng.practice.ActionsEx2"></class>
+      <class name="com.testng.practice.ActionsEx2"></class>-->
+      <class name="com.testng.practice.WebTableEx"></class> 
+      
 
     </classes>
   </test>
